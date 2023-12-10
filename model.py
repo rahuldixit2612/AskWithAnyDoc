@@ -6,7 +6,7 @@ from langchain.llms import CTransformers
 from langchain.chains import RetrievalQA
 import chainlit as cl
 
-DB_FAISS_PATH = 'D:\\Project_2023\\medical_chatbot\\vectorstore\\db_faiss'
+DB_FAISS_PATH = 'D:\\Project_2023\\chatbot\\vectorstore\\db_faiss'
 
 custom_prompt_template = """Use the following pieces of information to answer the user's question.
 If you don't know the answer, just say that you don't know, don't try to make up an answer.
@@ -164,7 +164,7 @@ async def start():
     chain = qa_bot()
     msg = cl.Message(content="Starting the bot...")
     await msg.send()
-    msg.content = "Hi, Welcome to Medical Bot. What is your query?"
+    msg.content = "Hi, Welcome to chat Bot. What is your query?"
     await msg.update()
 
     cl.user_session.set("chain", chain)
