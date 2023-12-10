@@ -1,4 +1,4 @@
-# TalkDocs - Chat-Based Document Assistant
+# Interact_With_Doc - Chat-Based Document Assistant
 
 Introducing TalkDocs, where your documents become interactive conversation partners! This project brings a touch of magic to your PDFs, images (JPG, JPEG, PNG), and more, using technologies like "langchain," "llm," and the powerful vector store FAISS.
 
